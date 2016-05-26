@@ -2,6 +2,8 @@
 [![Build status](https://secure.travis-ci.org/MatzFan/geoservices-ruby.svg)](http://travis-ci.org/MatzFan/geoservices-ruby)
 [![Gem Version](https://badge.fury.io/rb/geoservices.svg)](http://badge.fury.io/rb/geoservices)
 
+This Gem is a fork of the [official ESRI repo](https://github.com/Esri/geoservices-ruby). Full attribubution is given to the original authors and license-holders
+
 This library is a simple wrapper around the ArcGIS REST ("GeoServices") API. You can see the [GeoServices REST Specification](http://resources.arcgis.com/en/help/arcgis-rest-api/#/The_ArcGIS_REST_API)
 
 If you have not worked with GeoServices before, there are a few basic concepts to get started:
