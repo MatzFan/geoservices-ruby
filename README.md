@@ -1,6 +1,8 @@
 # GeoServices Ruby Library
+[![Build status](https://secure.travis-ci.org/MatzFan/geoservices-ruby.svg)](http://travis-ci.org/MatzFan/geoservices-ruby)
+[![Gem Version](https://badge.fury.io/rb/geoservices.svg)](http://badge.fury.io/rb/geoservices)
 
-This library is a simple wrapper around the GeoServices API. You can see the [GeoServices REST Specification](http://www.esri.com/industries/landing-pages/geoservices/geoservices) or the [Getting Started](https://services.arcgis.com/help/index.html?overview.html)
+This library is a simple wrapper around the ArcGIS REST ("GeoServices") API. You can see the [GeoServices REST Specification](http://resources.arcgis.com/en/help/arcgis-rest-api/#/The_ArcGIS_REST_API)
 
 If you have not worked with GeoServices before, there are a few basic concepts to get started:
 
@@ -58,9 +60,9 @@ puts query["features"]
 
 ### Testing
 
-geoservices-ruby uses RSpec for tests. 
+geoservices-ruby uses Rake and RSpec for tests.
 
-    $ rake rspec
+    $ rake spec
 
 ## Requirements
 
@@ -68,8 +70,8 @@ geoservices-ruby uses RSpec for tests.
 
 ## Resources
 
-* [GeoServices REST Specification](http://www.esri.com/industries/landing-pages/geoservices/geoservices)
-* [GeoServices Getting Started](https://services.arcgis.com/help/index.html?overview.html)
+* [ArcGIS ("GeoServices") REST Specification](http://resources.arcgis.com/en/help/arcgis-rest-api/#/The_ArcGIS_REST_API)
+* [ArcGIS Server REST API](http://resources.arcgis.com/en/help/rest/apiref/)
 
 ## Licensing
 Licensed under the Apache License, Version 2.0 (the "License");
@@ -84,7 +86,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-A copy of the license is available in the repository's [license.txt](./license.txt) file.
+A copy of the license is available in the repository's [license.txt](./LICENSE.txt) file.
 
 [](Esri Tags: ArcGIS Ruby API GeoServices Public)
 [](Esri Language: Ruby)
