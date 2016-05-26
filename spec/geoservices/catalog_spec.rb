@@ -1,18 +1,19 @@
-require 'helper'
-
 describe Geoservice do
   context 'getting a catalog' do
-    before :all do
-      @catalog = Geoservice::Catalog.new(host: 'http://rmgsc.cr.usgs.gov/ArcGIS/rest/services/')
-      @ecosys_us = @catalog['ecosys_US']
+    let(:catalog) do
+      Geoservice::Catalog.new(host: 'http://rmgsc.cr.usgs.gov/ArcGIS/rest/services/')
     end
 
-    it 'should return at least one service' do
-      expect(@catalog.services.size).to be >= 1
+    context '#services' do
+      it 'returns the number of services available - at least 1' do
+        expect(catalog.services.size).to be >= 1
+      end
     end
 
-    it "should return services of ['type'] 'MapServer'" do
-      expect(@ecosys_us['type']).to eq('MapServer')
+    context '#[]' do
+      it "indexes the catalog's services by name" do
+        expect(catalog['ecosys_US']['type']).to eq('MapServer')
+      end
     end
   end
 end
